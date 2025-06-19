@@ -1,0 +1,26 @@
+{
+  "name": "clothing-store-system",
+  "version": "1.0.0",
+  "description": "نظام إدارة محل ملابس يعمل بدون إنترنت",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^23.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^5.0.0"
+  },
+  "build": {
+    "appId": "com.example.clothingstore",
+    "win": {
+      "target": "nsis",
+      "icon": "icon.ico"
+    }
+  }
+}
